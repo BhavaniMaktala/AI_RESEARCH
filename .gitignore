@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+data/graph_snapshot.json
+.DS_Store
+node_modules/
+.pytest_cache/

@@ -1,0 +1,25 @@
+# ---- Core (everything works offline with just these) -------------------
+Flask==3.1.3
+flask-cors==6.0.5
+python-dotenv==1.2.4
+requests==2.34.2
+numpy>=2.0
+scikit-learn>=1.5
+networkx>=3.3
+
+# ---- Optional, but recommended ----------------------------------------
+# FAISS gives a much faster vector index (falls back to NumPy automatically)
+faiss-cpu>=1.8
+
+# Real transformer embeddings (downloads ~90 MB model on first run).
+# Without it the app uses TF-IDF + SVD, which needs no download.
+# sentence-transformers>=3.0
+
+# Production WSGI server (used by serve.py, and required when deploying).
+waitress>=3.0
+
+# Graph database instead of the in-process NetworkX graph
+# neo4j>=5.20
+
+# MongoDB instead of the default SQLite database
+# pymongo>=4.7

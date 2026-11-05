@@ -1,0 +1,322 @@
+{
+ "queries": 12,
+ "latency_ms": {
+  "mean": 95.6,
+  "median": 70.1,
+  "p95": 351.3,
+  "min": 55.7,
+  "max": 351.3
+ },
+ "agent_latency_ms": {
+  "query_understanding": {
+   "mean": 2.6,
+   "max": 4.2,
+   "share": 2.8
+  },
+  "retrieval": {
+   "mean": 12.6,
+   "max": 66.7,
+   "share": 13.9
+  },
+  "semantic": {
+   "mean": 18.1,
+   "max": 28.5,
+   "share": 20.0
+  },
+  "citation": {
+   "mean": 16.7,
+   "max": 196.0,
+   "share": 18.4
+  },
+  "ranking": {
+   "mean": 11.7,
+   "max": 22.9,
+   "share": 12.9
+  },
+  "summarization": {
+   "mean": 7.6,
+   "max": 9.8,
+   "share": 8.3
+  },
+  "explainability": {
+   "mean": 0.5,
+   "max": 0.8,
+   "share": 0.5
+  },
+  "learning": {
+   "mean": 21.1,
+   "max": 29.9,
+   "share": 23.2
+  }
+ },
+ "results_per_query": 10,
+ "diversity": {
+  "with_mmr": 0.946,
+  "without_mmr": 0.9448,
+  "gain_pct": 0.13
+ },
+ "lexical_overlap": 0.8333,
+ "graph": {
+  "backend": "networkx",
+  "nodes": 132,
+  "edges": 531,
+  "density": 0.061416,
+  "communities": 9,
+  "modularity": 0.6767
+ },
+ "corpus": {
+  "papers": 132,
+  "embedding": {
+   "name": "tfidf-svd-131",
+   "kind": "tfidf-svd",
+   "dim": 131
+  },
+  "vector_backend": {
+   "backend": "faiss",
+   "vectors": 132,
+   "dim": 131
+  }
+ },
+ "per_query": [
+  {
+   "query": "multi-agent LLM systems for scientific literature review",
+   "latency_ms": 351.3,
+   "results": 10,
+   "top_titles": [
+    "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augment",
+    "LLM-Agent-Controller: A Universal Multi-Agent Large Language Model System as a C",
+    "Automated Analysis Framework for Multilingual Climate-Health Literature Based on",
+    "MALMM: Multi-Agent Large Language Models for Zero-Shot Robotics Manipulation",
+    "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust "
+   ],
+   "top_scores": [
+    0.4078,
+    0.4026,
+    0.3767,
+    0.3821,
+    0.3544
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "retrieval augmented generation for scientific question answering",
+   "latency_ms": 67.3,
+   "results": 10,
+   "top_titles": [
+    "Overview of the TREC 2025 Retrieval Augmented Generation (RAG) Track",
+    "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augment",
+    "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+    "ASTRA-QA: A Benchmark for Abstract Question Answering over Documents",
+    "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust "
+   ],
+   "top_scores": [
+    0.4123,
+    0.3864,
+    0.3884,
+    0.3441,
+    0.3568
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "citation graph based paper recommendation",
+   "latency_ms": 75.1,
+   "results": 10,
+   "top_titles": [
+    "Enhancing Scientific Papers Summarization with Citation Graph",
+    "Domain Representation for Knowledge Graph Embedding",
+    "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+    "Utilizing Collaborative Filtering in a Personalized Research-Paper Recommendatio",
+    "A Survey of Knowledge Graph Embedding and Their Applications"
+   ],
+   "top_scores": [
+    0.3686,
+    0.3142,
+    0.2769,
+    0.2766,
+    0.2947
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "survey of explainable recommendation systems",
+   "latency_ms": 84.2,
+   "results": 10,
+   "top_titles": [
+    "Explainable Recommendation: A Survey and New Perspectives",
+    "Hierarchical Aspect-guided Explanation Generation for Explainable Recommendation",
+    "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust ",
+    "Review of compressed embedding layers and their applications for recommender sys",
+    "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augment"
+   ],
+   "top_scores": [
+    0.4801,
+    0.4491,
+    0.3809,
+    0.3769,
+    0.3257
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "knowledge graph embedding techniques",
+   "latency_ms": 55.7,
+   "results": 10,
+   "top_titles": [
+    "Domain Representation for Knowledge Graph Embedding",
+    "A Survey of Knowledge Graph Embedding and Their Applications",
+    "Scaling Knowledge Graph Embedding Models",
+    "Group Representation Theory for Knowledge Graph Embedding",
+    "Knowledge Sheaves: A Sheaf-Theoretic Framework for Knowledge Graph Embedding"
+   ],
+   "top_scores": [
+    0.4787,
+    0.3889,
+    0.365,
+    0.3606,
+    0.3565
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "abstractive summarization of research papers",
+   "latency_ms": 69.0,
+   "results": 10,
+   "top_titles": [
+    "Generative Adversarial Network for Abstractive Text Summarization",
+    "Neural Abstractive Text Summarizer for Telugu Language",
+    "The Rule of Three: Abstractive Text Summarization in Three Bullet Points",
+    "Summaformers @ LaySumm 20, LongSumm 20",
+    "Abstractive Text Summarization for Contemporary Sanskrit Prose: Issues and Chall"
+   ],
+   "top_scores": [
+    0.3922,
+    0.3732,
+    0.3673,
+    0.3245,
+    0.3099
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "dense retrieval with transformer embeddings",
+   "latency_ms": 68.0,
+   "results": 10,
+   "top_titles": [
+    "Compressed Concatenation of Small Embedding Models",
+    "Latent Positional Information is in the Self-Attention Variance of Transformer L",
+    "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augment",
+    "Dependency Transformer Grammars: Integrating Dependency Structures into Transfor",
+    "Contrastive Learning for Aspect Representation towards Explainable Recommendatio"
+   ],
+   "top_scores": [
+    0.3645,
+    0.3611,
+    0.3576,
+    0.3356,
+    0.3064
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "contrastive learning for representation learning",
+   "latency_ms": 92.8,
+   "results": 10,
+   "top_titles": [
+    "Contrastive Representation Learning: A Framework and Review",
+    "Contrastive Learning for Aspect Representation towards Explainable Recommendatio",
+    "Contrastive Representation Learning of Longitudinal Disease Trajectories on Temp",
+    "Generalization Analysis for Deep Contrastive Representation Learning",
+    "i-Mix: A Domain-Agnostic Strategy for Contrastive Representation Learning"
+   ],
+   "top_scores": [
+    0.4465,
+    0.4217,
+    0.3573,
+    0.3321,
+    0.3257
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "graph neural networks for ranking",
+   "latency_ms": 63.9,
+   "results": 10,
+   "top_titles": [
+    "Scaling Knowledge Graph Embedding Models",
+    "Modern graph neural networks do worse than classical greedy algorithms in solvin",
+    "Graph Neural Networks for Transmission Grid Topology Control: Busbar Information",
+    "Transformers are Graph Neural Networks",
+    "Fast and Deep Graph Neural Networks"
+   ],
+   "top_scores": [
+    0.3294,
+    0.3289,
+    0.3259,
+    0.319,
+    0.3173
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "learning to rank for academic search",
+   "latency_ms": 59.6,
+   "results": 10,
+   "top_titles": [
+    "Learning to rank for uplift modeling",
+    "LTRR: Learning To Rank Retrievers for LLMs",
+    "On Lipschitz Continuity and Smoothness of Loss Functions in Learning to Rank",
+    "Learning to Rank with Top-$K$ Fairness",
+    "Contrastive Learning for Aspect Representation towards Explainable Recommendatio"
+   ],
+   "top_scores": [
+    0.3976,
+    0.3319,
+    0.3147,
+    0.3086,
+    0.2823
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "detecting hallucination in large language models",
+   "latency_ms": 88.6,
+   "results": 10,
+   "top_titles": [
+    "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augment",
+    "Automating structural reliability analysis with a multi-agent large language mod",
+    "MALMM: Multi-Agent Large Language Models for Zero-Shot Robotics Manipulation",
+    "Scientific Knowledge Discovery in the Age of Large Language Models",
+    "Automated Analysis Framework for Multilingual Climate-Health Literature Based on"
+   ],
+   "top_scores": [
+    0.3652,
+    0.3531,
+    0.3502,
+    0.3287,
+    0.3199
+   ],
+   "candidates": 120
+  },
+  {
+   "query": "personalized research paper recommender systems",
+   "latency_ms": 71.3,
+   "results": 10,
+   "top_titles": [
+    "Recent Advances and Trends in Research Paper Recommender Systems: A Comprehensiv",
+    "Facilitating Interdisciplinary Knowledge Transfer with Research Paper Recommende",
+    "Utilizing Collaborative Filtering in a Personalized Research-Paper Recommendatio",
+    "A Survey on Incremental Update for Neural Recommender Systems",
+    "A Scalable Hybrid Research Paper Recommender System for Microsoft Academic"
+   ],
+   "top_scores": [
+    0.4494,
+    0.3874,
+    0.3403,
+    0.3056,
+    0.2925
+   ],
+   "candidates": 120
+  }
+ ]
+}

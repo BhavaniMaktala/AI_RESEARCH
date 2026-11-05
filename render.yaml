@@ -1,0 +1,16 @@
+# Render blueprint — deploy this repo as a web service.
+services:
+  - type: web
+    name: paperrec
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python backend/serve.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"
+      - key: ONLINE_MODE
+        value: auto
+      - key: THREADS
+        value: "8"
