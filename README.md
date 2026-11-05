@@ -1,4 +1,4 @@
-# PaperRec — AI Research Paper Recommendation System
+# AI Research Paper Recommendation System
 
 **Multi-agent research discovery platform.** Eight specialist AI agents understand a research
 question, retrieve candidate papers from Semantic Scholar / arXiv / a bundled corpus, score them
